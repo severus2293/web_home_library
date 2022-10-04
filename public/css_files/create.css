@@ -1,0 +1,329 @@
+
+
+/* image 1 */
+html {
+    background-image: url("../image_files/back_book.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Rectangle 1 */
+img.bookpic {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 25%;
+    top: 20%;
+
+    background: #D9D9D9;
+}
+
+/* Group 1*/
+
+div.authorholder {
+    position: absolute;
+    width: 644px;
+    height: 75px;
+    left: 758px;
+    top: 21%; /* 140px*/
+}
+
+
+/* Rectangle 2 */
+input.authornameholder {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+   /* left: 758px;
+    top: 140px;
+     */
+    background: #ACA9A4;
+}
+
+/* Rectangle 6 */
+div.author_square {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 48.5%;
+    top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #66615A;
+}
+
+/* icons8-редактировать-24 1 */
+img.authorpic {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 2%;
+    left: 48.5%;
+    display: block;
+    z-index: 10;
+    object-fit: cover;
+}
+
+/* Автор */
+p.author {
+    position: absolute;
+    width: 562px;
+    height: 48px;
+    left: 41%;
+    top: 10%;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+/* Название */
+p.title {
+    position: absolute;
+    width: 562px;
+    height: 48px;
+    left: 42%;
+    top: 23%;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+/* Дата выпуска */
+p.date {
+    position: absolute;
+    width: 562px;
+    height: 48px;
+    left: 43%;
+    top: 37%;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+/* Group 4 */
+div.titleholder {
+    position: absolute;
+    width: 644px;
+    height: 75px;
+    left: 758px;
+    top: 35%; /* 140px*/
+}
+
+/* Rectangle 2 */
+input.titlenameholder {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    top: 2%;
+    right: 52%;
+    background: #ACA9A4;
+}
+
+/* Rectangle 6 */
+div.title_square {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 48.5%;
+    top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #66615A;
+}
+
+img.titlepic{
+    /* icons8-редактировать-24 1 */
+
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 2%;
+    left: 48.5%;
+    display: block;
+    z-index: 10;
+    object-fit: cover;
+
+}
+/* Group 3 */
+div.dateholder {
+    position: absolute;
+    width: 644px;
+    height: 75px;
+    left: 758px;
+    top: 48%; /* 140px*/
+}
+
+
+/* Rectangle 2 */
+input.datenameholder {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    top: 2%;
+    right: 52%;
+    background: #ACA9A4;
+}
+
+/* Rectangle 6 */
+div.date_square {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 48.5%;
+    top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #66615A;
+}
+
+/* icons8-редактировать-24 1 */
+img.datepic {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 2%;
+    left: 48.5%;
+    display: block;
+    z-index: 10;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mask group */
+/*
+position: absolute;
+width: 55px;
+height: 57px;
+left: 26px;
+top: 749px;
+
+*/
+
+/* icons8-галочка-30 1
+
+position: absolute;
+width: 55px;
+height: 57px;
+left: 26px;
+top: 749px;
+
+background: url(icons8-галочка-30.png);
+*/
+
+/* icons8-галочка-30 2
+
+position: absolute;
+width: 55px;
+height: 57px;
+left: 26px;
+top: 749px;
+
+background: linear-gradient(0deg, #4FF514, #4FF514), url(icons8-галочка-30.png);
+
+*/
+/* Есть в наличии
+p.make {
+    position: absolute;
+    width: 296px;
+    height: 38px;
+    left: 40%;
+    top: 759px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}*/
+
+
+/* Rectangle 7 */
+button.make {
+    position: absolute;
+    width: 312px;
+    height: 30px;
+    left: 49.5%;
+    top: 56%;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 13px;
+    text-align: center;
+    background: #A3E419;
+    cursor: pointer;
+}
+button.goback{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 80%;
+    top: 5%;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 13px;
+    text-align: center;
+    background: #A3E419;
+    cursor: pointer;
+}
+
+
+
+/* Взять
+button.make {
+    position: absolute;
+    width: 446px;
+    height: 46px;
+    left: 84px;
+    top: 842px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #000000;
+}*/

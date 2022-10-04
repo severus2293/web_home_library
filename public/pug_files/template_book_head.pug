@@ -1,0 +1,67 @@
+img.bookpic(src= "/image_files/book_head.png")
+if state === "да" || state === "нет"
+  form(action="../../edit/" + bookid autocomplete="off" method="POST")
+    div.authorholder
+      img.authorpic(src="/image_files/edit.png")
+      div.author_square
+      input.authornameholder(
+            id = "author"
+            name= "author"
+            value = author
+        )
+    div.titleholder
+      img.titlepic(src="/image_files/edit.png")
+      div.title_square
+      input.titlenameholder(
+            id = "title"
+            name= "title"
+            value= title
+        )
+    div.dateholder
+      img.datepic(src="/image_files/edit.png")
+      div.date_square
+      input.datenameholder(
+            id = "date"
+            name= "date"
+            type= "date"
+            value = date
+        )
+    button.edit Изменить
+    form(action="../")
+        button.goback Назад
+    script(src="../script_files/book.js")
+else
+    form(action="../new"  autocomplete="off" method="POST")
+        div.authorholder
+            img.authorpic(src="/image_files/edit.png")
+            div.author_square
+            input.authornameholder(
+                id = "author"
+                name= "author"
+                value = author
+            )
+        div.titleholder
+            img.titlepic(src="/image_files/edit.png")
+            div.title_square
+            input.titlenameholder(
+                id = "title"
+                name= "title"
+                value= title
+            )
+        div.dateholder
+            img.datepic(src="/image_files/edit.png")
+            div.date_square
+            input.datenameholder(
+                id = "date"
+                name= "date"
+                type= "date"
+                value = date
+            )
+        button.make(onclick="return correct();") Добавить
+    script(src="../script_files/book.js")
+    form(action="../lib")
+        button.goback Назад
+p#err.error Заполните все поля!
+p.author Автор
+p.title Название
+p.date Дата выпуска

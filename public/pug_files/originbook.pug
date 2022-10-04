@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title= "Книга"
+        link(rel="stylesheet"
+            href="/css_files/origin.css")
+    body
+        include template_book_head
+
+        if state == "да"
+            script(type="text/javascript").
+                function check() {
+                    if (document.getElementById('date_return').value.trim() === '') {
+                        document.getElementById('dateerrret').style.display = 'block';
+                        return false;
+                    } else return true;
+                }
+            img.check(src="/image_files/check.png")
+            p.have Есть в наличии
+            p.dateret Дата возврата
+            p.dateerrret Укажите дату возврата!
+            form(action="./get/" + bookid method="POST")
+              input.datereturnholder(
+                  id = "date_return"
+                  name= "date_return"
+                  type= "date"
+              )
+
+              button.take(onclick= "return document.getElementById('date_return').value.trim() ==='' ? false:true ") Взять
+        else if state == "нет"
+            img.cross(src="/image_files/cross.png")
+            p.notbook Нет в наличии
+            dialog#userinf.userdial
+              p.data владелец: #{userfolder}
+              p дата возврата: #{date_return}
+            div.info_square
+            img.info(src="/image_files/info.png" onmouseover="document.getElementById('userinf').show()" onmouseout="document.getElementById('userinf').close()")
+            form(action="./return/" + bookid method="POST")
+              button.return Вернуть
